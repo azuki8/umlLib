@@ -40,7 +40,7 @@ namespace Azuki.UML
     public class Association<T>
     {
         // 集約種別
-        private AggreKindEnum agreeKind = AggreKindEnum.None;
+        private AggreKindEnum aggreKind = AggreKindEnum.None;
 
         // 関連端の実体リスト
         private List<T> roleList = null;
@@ -164,15 +164,15 @@ namespace Azuki.UML
         /// <summary>
         /// 関連 0..m のコンストラクタ
         /// </summary>
-        /// <param name="_agreeKind">集約種別</param>
+        /// <param name="_aggreKind">集約種別</param>
         /// <param name="_maxSize">多重度 最大値m</param>
         /// <param name="_defaultList">m個以内の初期要素リスト</param>
         /// <param name="_isUnique">{unique}制約 true(あり) false(なし)</param>
         /// <param name="_isOrdered">{orderd}制約 true(あり) false(なし)</param>
         /// <param name="_orderPropertyName">orderedの順序を決めるプロパティ名</param>
-        public Association(AggreKindEnum _agreeKind, int _maxSize, List<T> _defaultList = null, bool _isUnique = true, bool _isOrdered = false, string _orderPropertyName = "")
+        public Association(AggreKindEnum _aggreKind, int _maxSize, List<T> _defaultList = null, bool _isUnique = true, bool _isOrdered = false, string _orderPropertyName = "")
         {
-            agreeKind = _agreeKind;
+            aggreKind = _aggreKind;
             maxSize = _maxSize;
             isOrdered = _isOrdered;
             isUnique = _isUnique;
@@ -226,14 +226,14 @@ namespace Azuki.UML
         /// <summary>
         /// 関連 n..m のコンストラクタ
         /// </summary>
-        /// <param name="_agreeKind">集約種別</param>
+        /// <param name="_aggreKind">集約種別</param>
         /// <param name="_minSize">多重度 最小値n</param>
         /// <param name="_maxSize">多重度 最大値m</param>
         /// <param name="_defaultList">n～m個の初期要素リスト</param>
         /// <param name="_isUnique">{unique}制約 true(あり) false(なし)</param>
         /// <param name="_isOrdered">{orderd}制約 true(あり) false(なし)</param>
         /// <param name="_orderPropertyName">orderedの順序を決めるプロパティ名</param>
-        public Association(AggreKindEnum _agreeKind, int _minSize, int _maxSize, List<T> _defaultList = null, bool _isUnique = true, bool _ordered = false, string _orderPropertyName = "") : this(_agreeKind, _maxSize, _defaultList, _isUnique, _ordered, _orderPropertyName)
+        public Association(AggreKindEnum _aggreKind, int _minSize, int _maxSize, List<T> _defaultList = null, bool _isUnique = true, bool _ordered = false, string _orderPropertyName = "") : this(_aggreKind, _maxSize, _defaultList, _isUnique, _ordered, _orderPropertyName)
         {
             if( _minSize == _maxSize)
             {
@@ -257,8 +257,8 @@ namespace Azuki.UML
         /// 関連 0..1 のコンストラクタ
         /// </summary>
         /// <remarks>初期要素0のコンストラクタ</remarks>
-        /// <param name="_agreeKind">集約種別</param>
-        public Association(AggreKindEnum _agreeKind) : this(_agreeKind, 0, 1, null, false, false, "")
+        /// <param name="_aggreKind">集約種別</param>
+        public Association(AggreKindEnum _aggreKind) : this(_aggreKind, 0, 1, null, false, false, "")
         {
             // 多重度[0..1]なので、
             // 最小値 0
@@ -273,9 +273,9 @@ namespace Azuki.UML
         /// 関連 0..1 のコンストラクタ
         /// </summary>
         /// <remarks>初期要素のあるコンストラクタ</remarks>
-        /// <param name="_agreeKind">集約種別</param>
+        /// <param name="_aggreKind">集約種別</param>
         /// <param name="_defaultValue">初期要素</param>
-        public Association(AggreKindEnum _agreeKind, T _defaultValue) : this(_agreeKind)
+        public Association(AggreKindEnum _aggreKind, T _defaultValue) : this(_aggreKind)
         {
             bool ans = this.Add(_defaultValue);
             System.Diagnostics.Debug.Assert(ans == true);
@@ -309,7 +309,7 @@ namespace Azuki.UML
                 else
                 {
                     // コンポジションの場合の親チェック
-                    if (agreeKind == AggreKindEnum.Composite)
+                    if (aggreKind == AggreKindEnum.Composite)
                     {
                         if (CompositPartList.compsitList.Contains(value) == true)
                         {
@@ -323,7 +323,7 @@ namespace Azuki.UML
                     ans = true;
                     this.dirty = true;
                     // コンポジションの管理リストへの追加
-                    if (agreeKind == AggreKindEnum.Composite)
+                    if (aggreKind == AggreKindEnum.Composite)
                     {
                         if (ans == true)
                         {
@@ -364,7 +364,7 @@ namespace Azuki.UML
                         ans = true;
                     }
                     // コンポジションの場合、管理リストから削除
-                    if (agreeKind == AggreKindEnum.Composite)
+                    if (aggreKind == AggreKindEnum.Composite)
                     {
                         if (ans == true)
                         {
@@ -409,7 +409,7 @@ namespace Azuki.UML
     public class Association<TKey, TValue> 
     {
         // 集約種別
-        private AggreKindEnum agreeKind = AggreKindEnum.None;
+        private AggreKindEnum aggreKind = AggreKindEnum.None;
         // 関連 n..m
         private Dictionary<TKey, TValue> roleList = new Dictionary<TKey, TValue>();
 
@@ -456,23 +456,23 @@ namespace Azuki.UML
         /// <summary>
         /// 関連 限定子付き 0..1 のコンストラクタ
         /// </summary>
-        /// <param name="_agreeKind">集約種別</param>
-        public Association(AggreKindEnum _agreeKind)
+        /// <param name="_aggreKind">集約種別</param>
+        public Association(AggreKindEnum _aggreKind)
         {
             if (typeof(TValue).IsPrimitive == true || typeof(TValue).Equals(typeof(string)))
             {
                 System.Diagnostics.Debug.Fail(typeof(TValue).Name + "は、限定子付きの関連では使えません。プロパティを持つクラスか構造体のみ対応します");
             }
-            agreeKind = _agreeKind;
+            aggreKind = _aggreKind;
         }
 
         /// <summary>
         /// 関連 限定子付き 0..1 のコンストラクタ
         /// </summary>
-        /// <param name="_agreeKind">集約種別</param>
+        /// <param name="_aggreKind">集約種別</param>
         /// <param name="_key">初期要素の限定子の値</param>
         /// <param name="_value">初期要素</param>
-        public Association(AggreKindEnum _agreeKind, TKey _key, TValue _value) : this(_agreeKind)
+        public Association(AggreKindEnum _aggreKind, TKey _key, TValue _value) : this(_aggreKind)
         {
             bool ans = this.Add(_key, _value);
             System.Diagnostics.Debug.Assert(ans == true);
@@ -495,7 +495,7 @@ namespace Azuki.UML
             lock (CompositPartList.compsitLock)
             {
                 // コンポジションの場合の親チェック
-                if (agreeKind == AggreKindEnum.Composite)
+                if (aggreKind == AggreKindEnum.Composite)
                 {
                     if (CompositPartList.compsitList.Contains(value) == true)
                     {
@@ -528,7 +528,7 @@ namespace Azuki.UML
                 }
 
                 // コンポジションの管理リストへの追加
-                if (agreeKind == AggreKindEnum.Composite)
+                if (aggreKind == AggreKindEnum.Composite)
                 {
                     if (ans == true)
                     {
@@ -561,7 +561,7 @@ namespace Azuki.UML
                     TValue value = roleList[key];
                     ans = roleList.Remove(key);
                     // コンポジションの場合、管理リストから削除
-                    if (agreeKind == AggreKindEnum.Composite)
+                    if (aggreKind == AggreKindEnum.Composite)
                     {
                         if (ans == true)
                         {
@@ -612,21 +612,21 @@ namespace Azuki.UML
         /// <summary>
         /// 関連 2限定子付き 0..1 のコンストラクタ
         /// </summary>
-        /// <param name="_agreeKind">集約種別</param>
-        public Association(AggreKindEnum _agreeKind)
+        /// <param name="_aggreKind">集約種別</param>
+        public Association(AggreKindEnum _aggreKind)
         {
-            _multiAccociation = new Association<Tuple<TKey1, TKey2>, TValue>(_agreeKind);
+            _multiAccociation = new Association<Tuple<TKey1, TKey2>, TValue>(_aggreKind);
         }
 
         /// <summary>
         /// 関連 限定子付き 0..1 のコンストラクタ
         /// </summary>
-        /// <param name="_agreeKind">集約種別</param>
+        /// <param name="_aggreKind">集約種別</param>
         /// <param name="_key">初期要素の限定子の値</param>
         /// <typeparam name="TKey1">初期要素の限定子1の値</typeparam>
         /// <typeparam name="TKey2">初期要素の限定子2の値</typeparam>
         /// <param name="_value">初期要素</param>
-        public Association(AggreKindEnum _agreeKind, TKey1 _key1, TKey2 _key2, TValue _value) : this(_agreeKind)
+        public Association(AggreKindEnum _aggreKind, TKey1 _key1, TKey2 _key2, TValue _value) : this(_aggreKind)
         {
             bool ans = _multiAccociation.Add(Tuple.Create<TKey1, TKey2>(_key1,_key2),_value);
             System.Diagnostics.Debug.Assert(ans == true);
@@ -715,28 +715,28 @@ namespace Azuki.UML
         /// <summary>
         /// 関連 多重度n のコンストラクタ
         /// </summary>
-        /// <param name="_agreeKind">集約種別</param>
+        /// <param name="_aggreKind">集約種別</param>
         /// <param name="_no">多重度[n]</param>
         /// <param name="_defaultValue">n個の初期要素リスト</param>
         /// <param name="_isUnique">{unique}制約 true(あり) false(なし)</param>
         /// <param name="_isOrdered">{orderd}制約 true(あり) false(なし)</param>
         /// <param name="_orderPropertyName">orderedの順序を決めるプロパティ名</param>
-        public FixedAssociation(AggreKindEnum _agreeKind, int _no, List<T> _defaultValue, bool _isUnique = true, bool _isOrdered = false, string _orderPropertyName = "")
+        public FixedAssociation(AggreKindEnum _aggreKind, int _no, List<T> _defaultValue, bool _isUnique = true, bool _isOrdered = false, string _orderPropertyName = "")
         {
             if (_defaultValue.Count != _no)
             {
                 throw new ArgumentException("初期設定要素数不一致(" + _defaultValue.Count + "/" + _no + ")");
             }
-            association = new Association<T>(_agreeKind, 0, _no + 1, _defaultValue, _isUnique, _isOrdered, _orderPropertyName);
+            association = new Association<T>(_aggreKind, 0, _no + 1, _defaultValue, _isUnique, _isOrdered, _orderPropertyName);
             fixedSize = _no;
         }
 
         /// <summary>
         /// 関連 多重度1 のコンストラクタ
         /// </summary>
-        /// <param name="_agreeKind">集約種別</param>
+        /// <param name="_aggreKind">集約種別</param>
         /// <param name="value">初期要素</param>
-        public FixedAssociation(AggreKindEnum _agreeKind, T value) : this(_agreeKind,1, new List<T>() { value }, false,false,"")
+        public FixedAssociation(AggreKindEnum _aggreKind, T value) : this(_aggreKind,1, new List<T>() { value }, false,false,"")
         {
             
         }

@@ -80,11 +80,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1   1   1   生成 なし   3..6    あり あり  下限 あり  NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase1_X_1(agreeKind);
         }
 
-        private static void TestCase1_X_1(AgreeKindEnum agreeKind)
+        private static void TestCase1_X_1(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>();
             Hogera x = new Hogera("No2");
@@ -109,11 +109,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	1	2		なし  0..5	なし なし  上限+1	なし NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase1_X_2(agreeKind);
         }
 
-        private static void TestCase1_X_2(AgreeKindEnum agreeKind)
+        private static void TestCase1_X_2(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -142,11 +142,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	1	3		なし  3	なし あり  下限 なし  OK,3, YES
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase1_X_3(agreeKind);
         }
 
-        private static void TestCase1_X_3(AgreeKindEnum agreeKind)
+        private static void TestCase1_X_3(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -179,11 +179,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	1	4		なし  3..6	あり なし  下限-1	なし NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase1_X_4(agreeKind);
         }
 
-        private static void TestCase1_X_4(AgreeKindEnum agreeKind)
+        private static void TestCase1_X_4(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -208,11 +208,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	1	5		なし  0..5	あり あり  上限 あり  NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase1_X_5(agreeKind);
         }
 
-        private static void TestCase1_X_5(AgreeKindEnum agreeKind)
+        private static void TestCase1_X_5(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>();
             Hogera x = new Hogera("No2");
@@ -239,11 +239,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	1	6		なし  3	なし なし  下限-1	あり NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase1_X_6(agreeKind);
         }
 
-        private static void TestCase1_X_6(AgreeKindEnum agreeKind)
+        private static void TestCase1_X_6(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>();
             Hogera obj = new Hogera("No2");
@@ -267,11 +267,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	1	7		なし  3..6	なし なし  上限 なし  OK,6, NO
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase1_X_7(agreeKind);
         }
 
-        private static void TestCase1_X_7(AgreeKindEnum agreeKind)
+        private static void TestCase1_X_7(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -303,11 +303,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	1	8		なし  3	なし あり  上限 なし  OK,3, YES
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase1_X_8(agreeKind);
         }
 
-        private static void TestCase1_X_8(AgreeKindEnum agreeKind)
+        private static void TestCase1_X_8(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -336,11 +336,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	1	9		なし  0..1	なし あり  上限 なし  OK,1
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase1_X_9(agreeKind);
         }
 
-        private static void TestCase1_X_9(AgreeKindEnum agreeKind)
+        private static void TestCase1_X_9(AggreKindEnum agreeKind)
         {
             bool exception = false;
             try
@@ -369,11 +369,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	1	11		なし  1	なし なし  上限 なし  OK,1
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase1_X_11(agreeKind);
         }
 
-        private static void TestCase1_X_11(AgreeKindEnum agreeKind)
+        private static void TestCase1_X_11(AggreKindEnum agreeKind)
         {
             bool exception = false;
             try
@@ -394,11 +394,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	1	12		なし  3..6	あり あり  上限+1	あり NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase1_X_12(agreeKind);
         }
 
-        private static void TestCase1_X_12(AgreeKindEnum agreeKind)
+        private static void TestCase1_X_12(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -428,11 +428,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	1	13		なし  0..1	あり なし  下限 なし  OK,0
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase1_X_13(agreeKind);
         }
 
-        private static void TestCase1_X_13(AgreeKindEnum agreeKind)
+        private static void TestCase1_X_13(AggreKindEnum agreeKind)
         {
             bool exception = false;
             try
@@ -461,11 +461,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	1	15		なし  3	なし なし  上限+1	あり NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase1_X_15(agreeKind);
         }
 
-        private static void TestCase1_X_15(AgreeKindEnum agreeKind)
+        private static void TestCase1_X_15(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -492,11 +492,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	1	16		なし  1	なし なし  下限 なし  OK,1
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase1_X_16(agreeKind);
         }
 
-        private static void TestCase1_X_16(AgreeKindEnum agreeKind)
+        private static void TestCase1_X_16(AggreKindEnum agreeKind)
         {
             bool exception = false;
             try
@@ -517,11 +517,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	1	17		なし  0..5	なし あり  下限 あり  OK,0
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase1_X_17(agreeKind);
         }
 
-        private static void TestCase1_X_17(AgreeKindEnum agreeKind)
+        private static void TestCase1_X_17(AggreKindEnum agreeKind)
         {
             bool exception = false;
             try
@@ -541,11 +541,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	1	18		なし  3	なし あり  下限-1	なし NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase1_X_18(agreeKind);
         }
 
-        private static void TestCase1_X_18(AgreeKindEnum agreeKind)
+        private static void TestCase1_X_18(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -570,7 +570,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	2	1		集約  3..6	あり あり  下限 あり  NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase1_X_1(agreeKind);
         }
 
@@ -579,7 +579,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	2	2		集約  0..5	なし なし  上限+1	なし NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase1_X_2(agreeKind);
         }
 
@@ -588,7 +588,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	2	3		集約  3	なし あり  下限 なし  OK,3, YES
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase1_X_3(agreeKind);
         }
 
@@ -597,7 +597,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	2	4		集約  3..6	あり なし  下限-1	なし OK,5, NO
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase1_X_4(agreeKind);
         }
 
@@ -606,7 +606,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	2	5		集約  0..5	あり あり  上限 あり  NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase1_X_5(agreeKind);
         }
 
@@ -615,7 +615,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	2	6		集約  3	なし なし  下限-1	あり NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase1_X_6(agreeKind);
         }
 
@@ -624,7 +624,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	2	7		集約  3..6	なし なし  上限 なし  OK,6, NO
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase1_X_7(agreeKind);
         }
 
@@ -633,7 +633,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	2	8		集約  3	なし あり  上限 なし  OK,3, YES
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase1_X_8(agreeKind);
         }
 
@@ -642,7 +642,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	2	9		集約  0..1	なし あり  上限 なし  OK,1
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase1_X_9(agreeKind);
         }
 
@@ -659,7 +659,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	2	11		集約  1	なし なし  上限 なし  OK,1
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase1_X_11(agreeKind);
         }
 
@@ -668,7 +668,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	2	12		集約  3..6	あり あり  上限+1	あり NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase1_X_12(agreeKind);
         }
 
@@ -677,7 +677,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	2	13		集約  0..1	あり なし  下限 なし  OK,0
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase1_X_13(agreeKind);
         }
 
@@ -694,7 +694,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	2	15		集約  3	なし なし  上限+1	あり NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase1_X_15(agreeKind);
         }
 
@@ -703,7 +703,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	2	16		集約  1	なし なし  下限 なし  OK,1
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase1_X_16(agreeKind);
         }
 
@@ -712,7 +712,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	2	17		集約  0..5	なし あり  下限 あり  OK,0
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase1_X_17(agreeKind);
         }
 
@@ -721,7 +721,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	2	18		集約  3	なし あり  下限-1	なし NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase1_X_18(agreeKind);
         }
 
@@ -730,7 +730,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	3	1		コンポジション 3..6	あり あり  下限 あり  NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase1_X_1(agreeKind);
         }
 
@@ -739,7 +739,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	3	2		コンポジション 0..5	なし なし  上限+1	なし NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase1_X_2(agreeKind);
         }
 
@@ -748,7 +748,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	3	3		コンポジション 3	なし あり  下限 なし  OK,3, YES
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase1_X_3(agreeKind);
         }
 
@@ -757,7 +757,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	3	4		コンポジション 3..6	あり なし  下限-1	なし NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase1_X_4(agreeKind);
         }
 
@@ -766,7 +766,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	3	5		コンポジション 0..5	あり あり  上限 あり  NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase1_X_5(agreeKind);
         }
 
@@ -775,7 +775,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	3	6		コンポジション 3	なし なし  下限-1	あり NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase1_X_6(agreeKind);
         }
 
@@ -784,7 +784,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	3	7		コンポジション 3..6	なし なし  上限 なし  OK,6, NO
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase1_X_7(agreeKind);
         }
 
@@ -793,7 +793,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	3	8		コンポジション 3	なし あり  上限 なし  OK,3, YES
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase1_X_8(agreeKind);
         }
 
@@ -802,7 +802,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	3	9		コンポジション 0..1	なし あり  上限 なし  OK,1
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase1_X_9(agreeKind);
         }
 
@@ -819,7 +819,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	3	11		コンポジション 1	なし なし  上限 なし  OK,1
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase1_X_11(agreeKind);
         }
 
@@ -828,7 +828,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	3	12		コンポジション 3..6	あり あり  上限+1	あり NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase1_X_12(agreeKind);
         }
 
@@ -837,7 +837,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	3	13		コンポジション 0..1	あり なし  下限 なし  OK,0
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase1_X_13(agreeKind);
         }
 
@@ -854,7 +854,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	3	15		コンポジション 3	なし なし  上限+1	あり NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase1_X_15(agreeKind);
         }
 
@@ -863,7 +863,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	3	16		コンポジション 1	なし なし  下限 なし  OK,1
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase1_X_16(agreeKind);
         }
 
@@ -872,7 +872,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	3	17		コンポジション 0..5	なし あり  下限 あり  OK,0
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase1_X_17(agreeKind);
         }
 
@@ -881,7 +881,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別 多重度 ユニーク オーダー    初期要素数 初期要素のインスタンス重複   期待結果(生成、残数、順序）
             // 1	3	18		コンポジション 3	なし あり  下限-1	なし NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase1_X_18(agreeKind);
         }
 
@@ -894,11 +894,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_1_1		なし	0..1	あり	あり	上限	0	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase2_X_1(agreeKind);
         }
 
-        private static void TestCase2_X_1(AgreeKindEnum agreeKind)
+        private static void TestCase2_X_1(AggreKindEnum agreeKind)
         {
             bool exception = false;
             Association<Hogera> association = new Association<Hogera>(agreeKind, new Hogera("No1"));
@@ -920,11 +920,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_1_2		なし	0..5	なし	なし	下限	1	OK,1
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase2_X_2(agreeKind);
         }
 
-        private static void TestCase2_X_2(AgreeKindEnum agreeKind)
+        private static void TestCase2_X_2(AggreKindEnum agreeKind)
         {
             bool exception = false;
             Association<Hogera> association = new Association<Hogera>(agreeKind, 5, null, false, false);
@@ -947,11 +947,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_1_3		なし	3..6	あり	なし	上限-1	0	OK,6,NO
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase2_X_3(agreeKind);
         }
 
-        private static void TestCase2_X_3(AgreeKindEnum agreeKind)
+        private static void TestCase2_X_3(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -983,11 +983,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_1_4		なし	3..6	あり	あり	下限	1	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase2_X_4(agreeKind);
         }
 
-        private static void TestCase2_X_4(AgreeKindEnum agreeKind)
+        private static void TestCase2_X_4(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -1016,11 +1016,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_1_5		なし	0..5	なし	あり	上限	0	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase2_X_5(agreeKind);
         }
 
-        private static void TestCase2_X_5(AgreeKindEnum agreeKind)
+        private static void TestCase2_X_5(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -1050,11 +1050,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_1_6		なし	0..5	あり	あり	上限-1	1	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase2_X_6(agreeKind);
         }
 
-        private static void TestCase2_X_6(AgreeKindEnum agreeKind)
+        private static void TestCase2_X_6(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -1084,11 +1084,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_1_7		なし	0..1	なし	なし	下限	0	OK,1
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase2_X_7(agreeKind);
         }
 
-        private static void TestCase2_X_7(AgreeKindEnum agreeKind)
+        private static void TestCase2_X_7(AggreKindEnum agreeKind)
         {
             bool exception = false;
             Association<Hogera> association = new Association<Hogera>(agreeKind);
@@ -1111,11 +1111,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_1_8		なし	3..6	なし	なし	上限	1	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase2_X_8(agreeKind);
         }
 
-        private static void TestCase2_X_8(AgreeKindEnum agreeKind)
+        private static void TestCase2_X_8(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -1147,11 +1147,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_1_9		なし	0..5	なし	なし	上限-1	1	OK,5,NO
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase2_X_9(agreeKind);
         }
 
-        private static void TestCase2_X_9(AgreeKindEnum agreeKind,bool OK = false)
+        private static void TestCase2_X_9(AggreKindEnum agreeKind,bool OK = false)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -1191,7 +1191,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_2_1		集約	0..1	あり	あり	上限	0	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase2_X_1(agreeKind);
         }
         [TestMethod]
@@ -1199,7 +1199,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_2_2		集約	0..5	なし	なし	下限	1	OK,1
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase2_X_2(agreeKind);
         }
         [TestMethod]
@@ -1207,7 +1207,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_2_3		集約	3..6	あり	なし	上限-1	0	OK,6,NO
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase2_X_3(agreeKind);
         }
         [TestMethod]
@@ -1215,7 +1215,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_2_4		集約	3..6	あり	あり	下限	1	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase2_X_4(agreeKind);
         }
         [TestMethod]
@@ -1223,7 +1223,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_2_5		集約	0..5	なし	あり	上限	0	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase2_X_5(agreeKind);
         }
         [TestMethod]
@@ -1231,7 +1231,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_2_6		集約	0..5	あり	あり	上限-1	1	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase2_X_6(agreeKind);
         }
         [TestMethod]
@@ -1239,7 +1239,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_2_7		集約	0..1	なし	なし	下限	0	OK,1
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase2_X_7(agreeKind);
         }
         [TestMethod]
@@ -1247,7 +1247,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_2_8		集約	3..6	なし	なし	上限	1	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase2_X_8(agreeKind);
         }
         [TestMethod]
@@ -1255,7 +1255,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_2_9		集約	0..5	なし	なし	上限-1	1	OK,5,NO
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase2_X_9(agreeKind);
         }
         [TestMethod]
@@ -1269,7 +1269,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_3_1		コンポジション	0..1	あり	あり	上限	0	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase2_X_1(agreeKind);
         }
         [TestMethod]
@@ -1277,7 +1277,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_3_2		コンポジション	0..5	なし	なし	下限	1	OK
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase2_X_2(agreeKind);
         }
         [TestMethod]
@@ -1285,7 +1285,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_3_3		コンポジション	3..6	あり	なし	上限-1	0	OK,6,NO
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase2_X_3(agreeKind);
         }
         [TestMethod]
@@ -1293,7 +1293,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_3_4		コンポジション	3..6	あり	あり	下限	1	NG、コンポジションエラー
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase2_X_4(agreeKind);
         }
         [TestMethod]
@@ -1301,7 +1301,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_3_5		コンポジション	0..5	なし	あり	上限	0	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase2_X_5(agreeKind);
         }
         [TestMethod]
@@ -1309,7 +1309,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_3_6		コンポジション	0..5	あり	あり	上限-1	1	NG、コンポジションエラー
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase2_X_6(agreeKind);
         }
         [TestMethod]
@@ -1317,7 +1317,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_3_7		コンポジション	0..1	なし	なし	下限	0	OK,1
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase2_X_7(agreeKind);
         }
         [TestMethod]
@@ -1325,7 +1325,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_3_8		コンポジション	3..6	なし	なし	上限	1	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase2_X_8(agreeKind);
         }
         [TestMethod]
@@ -1333,7 +1333,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	追加対象含有数	期待結果(追加、残数、順序）
             // 2_3_9		コンポジション	0..5	なし	なし	上限-1	1	NG、コンポジションエラー
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase2_X_9(agreeKind,true);
         }
         [TestMethod]
@@ -1351,11 +1351,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_1_1		なし	0..1	なし	あり	上限	0	OK,0
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase3_X_1(agreeKind);
         }
 
-        private static void TestCase3_X_1(AgreeKindEnum agreeKind)
+        private static void TestCase3_X_1(AggreKindEnum agreeKind)
         {
             bool exception = false;
             Hogera added = new Hogera("No1");
@@ -1379,11 +1379,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_1_2		なし	3..6	なし	なし	下限	2	OK
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase3_X_2(agreeKind);
         }
 
-        private static void TestCase3_X_2(AgreeKindEnum agreeKind)
+        private static void TestCase3_X_2(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -1413,11 +1413,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_1_3		なし	0..5	あり	あり	下限	0	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase3_X_3(agreeKind);
         }
 
-        private static void TestCase3_X_3(AgreeKindEnum agreeKind)
+        private static void TestCase3_X_3(AggreKindEnum agreeKind)
         {
             bool exception = false;
             Association<Hogera> association = new Association<Hogera>(agreeKind, 5, null, true, true, "Name");
@@ -1439,11 +1439,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_1_4		なし	3..6	なし	あり	下限+1	2	一つ減らす、OK,3
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase3_X_4(agreeKind);
         }
 
-        private static void TestCase3_X_4(AgreeKindEnum agreeKind)
+        private static void TestCase3_X_4(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -1475,11 +1475,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_1_5		なし	3..6	あり	なし	上限	1	OK,5
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase3_X_5(agreeKind);
         }
 
-        private static void TestCase3_X_5(AgreeKindEnum agreeKind)
+        private static void TestCase3_X_5(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -1513,11 +1513,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_1_6		なし	0..5	なし	なし	下限+1	1	OK,0
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase3_X_6(agreeKind);
         }
 
-        private static void TestCase3_X_6(AgreeKindEnum agreeKind)
+        private static void TestCase3_X_6(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>();
             Hogera obj = new Hogera("No1");
@@ -1543,11 +1543,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_1_7		なし	0..5	なし	なし	上限	2	一つ減らす、OK,4
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase3_X_7(agreeKind);
         }
 
-        private static void TestCase3_X_7(AgreeKindEnum agreeKind)
+        private static void TestCase3_X_7(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -1579,11 +1579,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_1_8		なし	3..6	あり	なし	下限+1	0	OK,3
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase3_X_8(agreeKind);
         }
 
-        private static void TestCase3_X_8(AgreeKindEnum agreeKind)
+        private static void TestCase3_X_8(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -1615,11 +1615,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_1_9		なし	3..6	あり	あり	下限	1	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase3_X_9(agreeKind);
         }
 
-        private static void TestCase3_X_9(AgreeKindEnum agreeKind)
+        private static void TestCase3_X_9(AggreKindEnum agreeKind)
         {
             List<Hogera> list = new List<Hogera>
             {
@@ -1649,11 +1649,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_1_10		なし	0..1	あり	なし	下限	0	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase3_X_10(agreeKind);
         }
 
-        private static void TestCase3_X_10(AgreeKindEnum agreeKind)
+        private static void TestCase3_X_10(AggreKindEnum agreeKind)
         {
             bool exception = false;
             Association<Hogera> association = new Association<Hogera>(agreeKind);
@@ -1676,11 +1676,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_1_11		なし	0..1	あり	なし	上限	1	OK,0
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase3_X_11(agreeKind);
         }
 
-        private static void TestCase3_X_11(AgreeKindEnum agreeKind)
+        private static void TestCase3_X_11(AggreKindEnum agreeKind)
         {
             bool exception = false;
             Hogera added = new Hogera("No1");
@@ -1704,7 +1704,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_2_1		集約	0..1	なし	あり	上限	0	OK,0
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase3_X_1(agreeKind);
         }
         [TestMethod]
@@ -1712,7 +1712,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_2_2		集約	3..6	なし	なし	下限	2	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase3_X_2(agreeKind);
         }
         [TestMethod]
@@ -1720,7 +1720,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_2_3		集約	0..5	あり	あり	下限	0	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase3_X_3(agreeKind);
         }
         [TestMethod]
@@ -1728,7 +1728,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_2_4		集約	3..6	なし	あり	下限+1	2	一つ減らす、OK,3
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase3_X_4(agreeKind);
         }
         [TestMethod]
@@ -1736,7 +1736,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_2_5		集約	3..6	あり	なし	上限	1	OK,5
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase3_X_5(agreeKind);
         }
         [TestMethod]
@@ -1744,7 +1744,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_2_6		集約	0..5	なし	なし	下限+1	1	OK,0
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase3_X_6(agreeKind);
         }
         [TestMethod]
@@ -1752,7 +1752,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_2_7		集約	0..5	なし	なし	上限	2	一つ減らす、OK,4
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase3_X_7(agreeKind);
         }
         [TestMethod]
@@ -1760,7 +1760,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_2_8		集約	3..6	あり	なし	下限+1	0	OK,3
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase3_X_8(agreeKind);
         }
         [TestMethod]
@@ -1768,7 +1768,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_2_9		集約	3..6	あり	あり	下限	1	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase3_X_9(agreeKind);
         }
         [TestMethod]
@@ -1776,7 +1776,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_2_10		集約	0..1	あり	なし	下限	0	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase3_X_10(agreeKind);
         }
         [TestMethod]
@@ -1784,7 +1784,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_2_11		集約	0..1	あり	なし	上限	1	OK,0
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase3_X_11(agreeKind);
         }
         [TestMethod]
@@ -1792,7 +1792,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_3_1		コンポジション	0..1	なし	あり	上限	0	OK,0
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase3_X_1(agreeKind);
         }
         [TestMethod]
@@ -1803,7 +1803,7 @@ namespace UMLMappingCSTest
             bool exception = false;
             try
             {
-                AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+                AggreKindEnum agreeKind = AggreKindEnum.Composite;
                 TestCase3_X_2(agreeKind);
             }
             catch(Exception e)
@@ -1819,7 +1819,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_3_3		コンポジション	0..5	あり	あり	下限	0	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase3_X_3(agreeKind);
         }
         [TestMethod]
@@ -1830,7 +1830,7 @@ namespace UMLMappingCSTest
             bool exception = false;
             try
             {
-                AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+                AggreKindEnum agreeKind = AggreKindEnum.Composite;
                 TestCase3_X_4(agreeKind);
             }
             catch(Exception e)
@@ -1846,7 +1846,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_3_5		コンポジション	3..6	あり	なし	上限	1	OK,5
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase3_X_5(agreeKind);
         }
         [TestMethod]
@@ -1854,7 +1854,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_3_6		コンポジション	0..5	なし	なし	下限+1	1	OK,0
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase3_X_6(agreeKind);
         }
         [TestMethod]
@@ -1865,7 +1865,7 @@ namespace UMLMappingCSTest
             bool exception = false;
             try
             {
-                AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+                AggreKindEnum agreeKind = AggreKindEnum.Composite;
                 TestCase3_X_7(agreeKind);
             }
             catch (Exception e)
@@ -1881,7 +1881,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_3_8		コンポジション	3..6	あり	なし	下限+1	0	OK,3
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase3_X_8(agreeKind);
         }
         [TestMethod]
@@ -1889,7 +1889,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_3_9		コンポジション	3..6	あり	あり	下限	1	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase3_X_9(agreeKind);
         }
         [TestMethod]
@@ -1897,7 +1897,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             // 3_3_10		コンポジション	0..1	あり	なし	下限	0	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase3_X_10(agreeKind);
         }
         [TestMethod]
@@ -1905,7 +1905,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	現在要素数	削除対象含有数	期待結果（削除、残数）
             //3_3_11		コンポジション	0..1	あり	なし	上限	1	OK,0
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase3_X_11(agreeKind);
         }
 
@@ -1917,11 +1917,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	追加対象含有数	期待結果（削除、残数、順序）
             // 4_1_1		なし	3	あり	あり	1	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase4_X_1(agreeKind);
         }
 
-        private static void TestCase4_X_1(AgreeKindEnum agreeKind)
+        private static void TestCase4_X_1(AggreKindEnum agreeKind)
         {
             bool exception = false;
             List<Hogera> list = new List<Hogera>
@@ -1951,11 +1951,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	追加対象含有数	期待結果（削除、残数、順序）
             // 4_1_2		なし	1	なし	なし	1	OK,1,
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase4_X_2(agreeKind);
         }
 
-        private static void TestCase4_X_2(AgreeKindEnum agreeKind)
+        private static void TestCase4_X_2(AggreKindEnum agreeKind)
         {
             bool exception = false;
             Hogera oldhogera = new Hogera("No4");
@@ -1981,11 +1981,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	追加対象含有数	期待結果（削除、残数、順序）
             // 4_1_3		なし	3	なし	なし	2	OK,3,NO
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase4_X_3(agreeKind);
         }
 
-        private static void TestCase4_X_3(AgreeKindEnum agreeKind)
+        private static void TestCase4_X_3(AggreKindEnum agreeKind)
         {
             bool exception = false;
             List<Hogera> list = new List<Hogera>
@@ -2025,11 +2025,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	追加対象含有数	期待結果（削除、残数、順序）
             // 4_1_5		なし	3	なし	あり	2	OK,3,YES
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase4_X_5(agreeKind);
         }
 
-        private static void TestCase4_X_5(AgreeKindEnum agreeKind)
+        private static void TestCase4_X_5(AggreKindEnum agreeKind)
         {
             bool exception = false;
             List<Hogera> list = new List<Hogera>
@@ -2061,11 +2061,11 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	追加対象含有数	期待結果（削除、残数、順序）
             // 4_1_6		なし	3	なし	あり	0	OK,3,YES
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             TestCase4_X_6(agreeKind);
         }
 
-        private static void TestCase4_X_6(AgreeKindEnum agreeKind)
+        private static void TestCase4_X_6(AggreKindEnum agreeKind)
         {
             bool exception = false;
             List<Hogera> list = new List<Hogera>
@@ -2105,7 +2105,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	追加対象含有数	期待結果（削除、残数、順序）
             // 4_2_1		集約	3	あり	あり	1	NG
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase4_X_1(agreeKind);
         }
         [TestMethod]
@@ -2113,7 +2113,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	追加対象含有数	期待結果（削除、残数、順序）
             // 4_2_2		集約	1	なし	なし	1	OK,1,
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase4_X_2(agreeKind);
         }
         [TestMethod]
@@ -2121,7 +2121,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	追加対象含有数	期待結果（削除、残数、順序）
             // 4_2_3		集約	3	なし	なし	2	OK,3,NO
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase4_X_3(agreeKind);
         }
         [TestMethod]
@@ -2137,7 +2137,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	追加対象含有数	期待結果（削除、残数、順序）
             // 4_2_5		集約	3	なし	あり	2	OK,3,YES
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase4_X_5(agreeKind);
         }
         [TestMethod]
@@ -2145,7 +2145,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	追加対象含有数	期待結果（削除、残数、順序）
             // 4_2_6		集約	3	なし	あり	0	OK,3,YES
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             TestCase4_X_6(agreeKind);
         }
         [TestMethod]
@@ -2161,7 +2161,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	追加対象含有数	期待結果（削除、残数、順序）
             // 4_3_1		コンポジション	3	あり	あり	1	NG,コンポジションエラー
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase4_X_1(agreeKind);
         }
         [TestMethod]
@@ -2169,7 +2169,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	追加対象含有数	期待結果（削除、残数、順序）
             // 4_3_2		コンポジション	1	なし	なし	1	OK,1,
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase4_X_2(agreeKind);
         }
         [TestMethod]
@@ -2185,7 +2185,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	ユニーク	オーダー	追加対象含有数	期待結果（削除、残数、順序）
             // 4_3_4		コンポジション	3	なし	あり	0	OK,3,YES
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             TestCase4_X_6(agreeKind);
         }
         [TestMethod]
@@ -2206,7 +2206,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	オーダー	追加対象含有数	期待結果
             // 5_1_1		なし	3	あり	sbyte
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             List<sbyte> list = new List<sbyte>
             {
                 3,
@@ -2232,7 +2232,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	オーダー	追加対象含有数	期待結果
             // 5_1_2		なし	0..3	あり	byte
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             List<byte> list = new List<byte>
             {
                 3,
@@ -2258,7 +2258,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	オーダー	追加対象含有数	期待結果
             // 5_1_3		なし	3	あり	short	
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             List<short> list = new List<short>
             {
                 3,
@@ -2284,7 +2284,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	オーダー	追加対象含有数	期待結果
             // 5_1_4		なし	0..3	あり	ushort	
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             List<ushort> list = new List<ushort>
             {
                 3,
@@ -2310,7 +2310,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	オーダー	追加対象含有数	期待結果
             // 5_1_5		なし	3	あり	int	
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             List<int> list = new List<int>
             {
                 -3,
@@ -2336,7 +2336,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	オーダー	追加対象含有数	期待結果
             // 5_1_6		なし	0..3	あり	uint	
-            AgreeKindEnum agreeKind = AgreeKindEnum.None;
+            AggreKindEnum agreeKind = AggreKindEnum.None;
             List<uint> list = new List<uint>
             {
                 3,
@@ -2362,7 +2362,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	オーダー	追加対象含有数	期待結果
             // 5_2_1		集約	3	あり	long
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             List<long> list = new List<long>
             {
                 3,
@@ -2388,7 +2388,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	オーダー	追加対象含有数	期待結果
             // 5_2_2		集約	0..3	あり	char	
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             List<char> list = new List<char>
             {
                 '3',
@@ -2414,7 +2414,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	オーダー	追加対象含有数	期待結果
             // 5_2_3		集約	3	あり	float
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             List<float> list = new List<float>
             {
                 0.3f,
@@ -2440,7 +2440,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	オーダー	追加対象含有数	期待結果
             // 5_2_4		集約	0..3	あり	double	
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             List<double> list = new List<double>
             {
                 0.3,
@@ -2466,7 +2466,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	オーダー	追加対象含有数	期待結果
             // 5_2_5		集約	3	あり	bool	
-            AgreeKindEnum agreeKind = AgreeKindEnum.Shared;
+            AggreKindEnum agreeKind = AggreKindEnum.Shared;
             List<bool> list = new List<bool>
             {
                 true,
@@ -2493,7 +2493,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	オーダー	追加対象含有数	期待結果
             // 5_3_1		コンポジション	0..3	あり	decimal	
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             List<bool> list = new List<bool>
             {
                 true,
@@ -2520,7 +2520,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	オーダー	追加対象含有数	期待結果
             // 5_3_2		コンポジション	3	あり	string	
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             List<string> list = new List<string>
             {
                 "ABC",
@@ -2562,7 +2562,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	オーダー	追加対象含有数	期待結果
             // 5_3_3		コンポジション	0..3	あり	struct	
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             List<Piyo> list = new List<Piyo>
             {
                 new Piyo(2),
@@ -2591,7 +2591,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	オーダー	追加対象含有数	期待結果
             // 5_3_4		コンポジション	3	あり	enum	
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             List<PiyoPiyo> list = new List<PiyoPiyo>
             {
                 PiyoPiyo.PIYO_4,
@@ -2619,7 +2619,7 @@ namespace UMLMappingCSTest
         {
             // 集約種別	多重度	オーダー	追加対象含有数	期待結果
             // 5_3_5		コンポジション	0..3	あり	クラス	
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             List<Hogera> list = new List<Hogera>
             {
                 new Hogera("No3", PiyoPiyo.PIYO_3),
@@ -2649,7 +2649,7 @@ namespace UMLMappingCSTest
         [TestMethod]
         public void TestCase6_1_1()
         {
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             Association<int, Hogera> association = new Association<int, Hogera>(agreeKind, 1, new Hogera("No1"));
             association.Add(2, new Hogera("No2"));
             foreach(KeyValuePair<int,Hogera> pair in association.AllEnd)
@@ -2665,7 +2665,7 @@ namespace UMLMappingCSTest
         [TestMethod]
         public void TestCase6_1_2()
         {
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             Association<int, Hogera> association = new Association<int, Hogera>(agreeKind, 1, new Hogera("No1"));
             association.Add(2, new Hogera("No2"));
             bool exception = false;
@@ -2687,7 +2687,7 @@ namespace UMLMappingCSTest
         [TestMethod]
         public void TestCase6_1_3()
         {
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             Association<int, Hogera> association = new Association<int, Hogera>(agreeKind, 1, new Hogera("No1"));
             association.Add(2, new Hogera("No2"));
             foreach (KeyValuePair<int, Hogera> pair in association.AllEnd)
@@ -2712,7 +2712,7 @@ namespace UMLMappingCSTest
         [TestMethod]
         public void TestCase6_1_4()
         {
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             Association<int,int, Hogera> association = new Association<int,int, Hogera>(agreeKind,1, 2, new Hogera("No1"));
             association.Add(1,3, new Hogera("No2"));
             foreach (KeyValuePair<Tuple<int,int>, Hogera> pair in association.AllEnd)
@@ -2738,7 +2738,7 @@ namespace UMLMappingCSTest
         [TestMethod]
         public void TestCase6_1_5()
         {
-            AgreeKindEnum agreeKind = AgreeKindEnum.Composite;
+            AggreKindEnum agreeKind = AggreKindEnum.Composite;
             Association<int, int, Hogera> association = new Association<int, int, Hogera>(agreeKind, 1, 2, new Hogera("No1"));
             association.Add(1, 3, new Hogera("No2"));
             foreach (KeyValuePair<Tuple<int, int>, Hogera> pair in association.AllEnd)

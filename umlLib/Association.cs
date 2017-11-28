@@ -76,7 +76,7 @@ namespace Azuki.UML
         {
             get
             {
-                if (maxSize > 1)
+                if ((maxSize > 1) || (maxSize == -1))
                 {
                     System.Diagnostics.Debug.Fail("Association:多重度2以上の関連では、Endを利用できません");
                     return default(T);
@@ -165,7 +165,7 @@ namespace Azuki.UML
         /// 関連 0..m のコンストラクタ
         /// </summary>
         /// <param name="_aggreKind">集約種別</param>
-        /// <param name="_maxSize">多重度 最大値m</param>
+        /// <param name="_maxSize">多重度 最大値m (*=-1)</param>
         /// <param name="_defaultList">m個以内の初期要素リスト</param>
         /// <param name="_isUnique">{unique}制約 true(あり) false(なし)</param>
         /// <param name="_isOrdered">{orderd}制約 true(あり) false(なし)</param>
@@ -204,13 +204,23 @@ namespace Azuki.UML
                 }
             }
 
-            roleList = new List<T>(maxSize); // 初期化時に最大サイズ取得しておく
+            if( maxSize == -1) // 多重度の最大値が * の場合
+            {
+                roleList = new List<T>(); // 初期化時に最大サイズ指定しない
+            }
+            else
+            {
+                roleList = new List<T>(maxSize); // 初期化時に最大サイズ取得しておく
+            }
 
             if (_defaultList != null)
             {
-                if(maxSize < _defaultList.Count)
+                if(maxSize != -1)
                 {
-                    throw new ArgumentException("初期リストが最大数より多い");
+                    if (maxSize < _defaultList.Count)
+                    {
+                        throw new ArgumentException("初期リストが最大数より多い");
+                    }
                 }
                 // 最小値以上最大値未満のリストで初期化する
                 foreach (T item in _defaultList)
@@ -228,7 +238,7 @@ namespace Azuki.UML
         /// </summary>
         /// <param name="_aggreKind">集約種別</param>
         /// <param name="_minSize">多重度 最小値n</param>
-        /// <param name="_maxSize">多重度 最大値m</param>
+        /// <param name="_maxSize">多重度 最大値m (*=-1)</param>
         /// <param name="_defaultList">n～m個の初期要素リスト</param>
         /// <param name="_isUnique">{unique}制約 true(あり) false(なし)</param>
         /// <param name="_isOrdered">{orderd}制約 true(あり) false(なし)</param>
@@ -301,7 +311,7 @@ namespace Azuki.UML
                 }
 
                 // 最大値を超える場合は、NG
-                if (roleList.Count >= maxSize)
+                if ((maxSize != -1)&&(roleList.Count >= maxSize)) // ただしmaxSizeが*の時はNGにならない
                 {
                     System.Diagnostics.Debug.Fail("Association最大値越え");
                     return false;
